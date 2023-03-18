@@ -6,6 +6,11 @@ public class Thridfile {
 	{
 		System.out.println("merge");
 	}
+	
+	public void mergeconflicts2()
+	{
+		System.out.println("merge");
+	}
 
 public void studentchange()
 {
