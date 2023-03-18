@@ -7,6 +7,11 @@ public class Thridfile {
 		System.out.println("merge");
 	}
 
+public void studentchange()
+{
+System.out.println("student");
+}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
