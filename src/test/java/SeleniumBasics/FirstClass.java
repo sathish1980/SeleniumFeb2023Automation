@@ -43,6 +43,8 @@ public class FirstClass {
 		driver.findElement(By.id("email")).sendKeys("sara");
 		//driver.findElement(By.linkText("Forgotten password?")).click();
 		driver.findElement(By.partialLinkText("pass")).click();
+		driver.findElement(By.id("webklipper-publisher-widget-container-notification-close-div")).click();
+		driver.findElement(By.className("close")).click();
 	}
 
 	public static void main(String[] args) {
