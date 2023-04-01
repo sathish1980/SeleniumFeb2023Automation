@@ -16,7 +16,6 @@ public class syncronization {
 		ChromeOptions option = new ChromeOptions();
 		option.addArguments("--remote-allow-origins=*");
 		WebDriver driver = new ChromeDriver(option);
-		
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 		driver.findElement(By.xpath("//*[text()='Create new account']")).click();
