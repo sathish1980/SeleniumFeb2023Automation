@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="22584" started-at="2023-04-15T12:00:32 IST" finished-at="2023-04-15T12:00:55 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="22584" started-at="2023-04-15T12:00:32 IST" finished-at="2023-04-15T12:00:55 IST">
+      <class name="Testcases.Facebooklogin">
+        <test-method status="PASS" signature="launchbrowser()[pri:0, instance:Testcases.Facebooklogin@38bc8ab5]" name="launchbrowser" is-config="true" duration-ms="2139" started-at="2023-04-15T12:00:30 IST" finished-at="2023-04-15T12:00:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method status="PASS" signature="maximizeScreen()[pri:0, instance:Testcases.Facebooklogin@38bc8ab5]" name="maximizeScreen" is-config="true" duration-ms="863" started-at="2023-04-15T12:00:32 IST" finished-at="2023-04-15T12:00:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maximizeScreen -->
+        <test-method status="PASS" signature="facebookloginandlogout(java.lang.String,java.lang.String)[pri:0, instance:Testcases.Facebooklogin@38bc8ab5]" name="facebookloginandlogout" duration-ms="7623" started-at="2023-04-15T12:00:33 IST" data-provider="facebooklogindetails" finished-at="2023-04-15T12:00:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kumar.sathish189@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebookloginandlogout -->
+        <test-method status="PASS" signature="facebookloginandlogout(java.lang.String,java.lang.String)[pri:0, instance:Testcases.Facebooklogin@38bc8ab5]" name="facebookloginandlogout" duration-ms="6351" started-at="2023-04-15T12:00:41 IST" data-provider="facebooklogindetails" finished-at="2023-04-15T12:00:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kumar.sathish189@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebookloginandlogout -->
+        <test-method status="PASS" signature="facebookloginandlogout(java.lang.String,java.lang.String)[pri:0, instance:Testcases.Facebooklogin@38bc8ab5]" name="facebookloginandlogout" duration-ms="5967" started-at="2023-04-15T12:00:47 IST" data-provider="facebooklogindetails" finished-at="2023-04-15T12:00:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kumar.sathish189@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebookloginandlogout -->
+        <test-method status="PASS" signature="facebookInvalidusername()[pri:1, instance:Testcases.Facebooklogin@38bc8ab5]" name="facebookInvalidusername" duration-ms="1572" started-at="2023-04-15T12:00:53 IST" finished-at="2023-04-15T12:00:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebookInvalidusername -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Testcases.Facebooklogin@38bc8ab5]" name="teardown" is-config="true" duration-ms="814" started-at="2023-04-15T12:00:55 IST" finished-at="2023-04-15T12:00:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Testcases.Facebooklogin -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

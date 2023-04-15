@@ -38,9 +38,9 @@ public class ExcelRead {
 			{
 				Cell eachcell=eachRow.getCell(j);
 				System.out.print(eachcell.getStringCellValue());
-				System.out.print("\s");
+				//System.out.print("\s");
 			}
-			System.out.print("\n");
+			//System.out.print("\n");
 		}
 		System.out.println("Read completed");
 		
@@ -105,10 +105,10 @@ public class ExcelRead {
 				Cell eachcell=eachRow.getCell(j);
 				Cell outcelvalue=outRow.createCell(j);
 				//System.out.print(eachcell.getStringCellValue());
-				System.out.print("\s");
+				//System.out.print("\s");
 				outcelvalue.setCellValue(exactcellvalue(eachcell).toString());
 			}
-			System.out.print("\n");
+			//System.out.print("\n");
 		}
 		System.out.println("Read completed");
 

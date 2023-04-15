@@ -3,19 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNGBasics.FirsttestNG">
+      <class name="Testcases.Facebooklogin">
         <methods>
-          <include name="Afterclass"/>
-          <include name="AfterMethod"/>
-          <include name="AfterTest"/>
-          <include name="BeforeMethod"/>
-          <include name="BeforeTest"/>
-          <include name="BeforeSuite"/>
-          <include name="AfterSuite"/>
-          <include name="Beforeclass"/>
-          <include name="Testcase1"/>
+          <include name="teardown"/>
+          <include name="launchbrowser"/>
+          <include name="facebookloginandlogout" invocation-numbers="0 1 2"/>
+          <include name="maximizeScreen"/>
         </methods>
-      </class> <!-- TestNGBasics.FirsttestNG -->
+      </class> <!-- Testcases.Facebooklogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

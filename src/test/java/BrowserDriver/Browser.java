@@ -2,17 +2,28 @@ package BrowserDriver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+
 public class Browser 
 {
- public static WebDriver driver;
+	 public static WebDriver driver;
+	 public static ExtentReports report;
+	 public static ExtentTest test;
+	 private String reportPath=System.getProperty("user.dir");
+	
 	public void launchBrowser(String browserName)
 	{
 		if (browserName.equalsIgnoreCase("chrome"))
 		{
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("start-maximized");
+			options.addArguments("--disable-Notifications");
+			driver = new ChromeDriver(options);
 		}
 		else if (browserName.equalsIgnoreCase("firefox"))
 		{
@@ -26,6 +37,9 @@ public class Browser
 		{
 			driver = null;
 		}
-		
+		System.out.println(reportPath);
+		report = new ExtentReports(reportPath+"//Report//extentreport.html",true);
+		test= report.startTest("Facebook Automation report");	
+	
 	}
 }

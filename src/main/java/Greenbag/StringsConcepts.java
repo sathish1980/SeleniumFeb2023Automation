@@ -27,11 +27,11 @@ public class StringsConcepts {
 		System.out.println(name+secondname);
 		System.out.println(name.concat(secondname));
 		System.out.println(name.replaceAll("zsd","A"));
-		String[] newarray=name.split("\s");
+		/*String[] newarray=name.split("\s");
 		for(String eachvalue : newarray)
 		{
 			System.out.println(eachvalue);
-		}
+		}*/
 		System.out.println(name.substring(1,4));
 		System.out.println(name.substring(4));
 		char[] n=name.toCharArray();
