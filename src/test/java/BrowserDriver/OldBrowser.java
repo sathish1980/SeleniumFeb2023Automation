@@ -10,24 +10,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
-public class Browser 
+public class OldBrowser 
 {
-	 //public static WebDriver driver;
+	 public static WebDriver driver;
 	 public static ExtentReports report;
 	 public static ExtentTest test;
 	 private String reportPath=System.getProperty("user.dir");
-	 public static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
-	 
-	public void setdriver(WebDriver driver)
-	{
-		this.driver.set(driver);
-	}
-		
-	public WebDriver getdriver()
-	{
-		return this.driver.get();
-	}
-		
 	
 	public void launchBrowser(String browserName)
 	{
@@ -36,19 +24,18 @@ public class Browser
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("start-maximized");
 			options.addArguments("--disable-Notifications");
-			setdriver(new ChromeDriver(options));
-			getdriver().manage().window().maximize();
+			driver = new ChromeDriver(options);
 		}
 		else if (browserName.equalsIgnoreCase("firefox"))
 		{
-			setdriver(new FirefoxDriver());
+			driver = new FirefoxDriver();
 		}
 		else if (browserName.equalsIgnoreCase("Edge"))
 		{
 			EdgeOptions options = new EdgeOptions();
 			options.addArguments("start-maximized");
 			options.addArguments("--disable-Notifications");
-			setdriver(new EdgeDriver(options));
+			driver = new EdgeDriver(options);
 		}
 		else
 		{

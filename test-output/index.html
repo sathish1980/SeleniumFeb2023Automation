@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">8 methods, 3 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Testcases.Facebooklogin" hash-for-method="facebookInvalidusername">facebookInvalidusername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Testcases.Facebooklogin" hash-for-method="facebookloginandlogout(kumar.sathish189@gmail.com, Admin@123)">facebookloginandlogout(kumar.sathish189@gmail.com, Admin@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Testcases.Facebooklogin" hash-for-method="facebookloginandlogout(kumar.sathish189@gmail.com, Admin@123)">facebookloginandlogout(kumar.sathish189@gmail.com, Admin@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -105,6 +129,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Testcases.Facebooklogin" hash-for-method="facebookInvalidusername">facebookInvalidusername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Testcases.Facebooklogin" hash-for-method="facebookloginandlogout(kumar.sathish189@gmail.com, Admin@123)">facebookloginandlogout(kumar.sathish189@gmail.com, Admin@123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -134,6 +163,111 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Testcases.Facebooklogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="facebookInvalidusername">
+                  </a> <!-- facebookInvalidusername -->
+                  <span class="method-name">facebookInvalidusername</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button value=&quot;1&quot; class=&quot;_42ft _4jy0 _alop _4jy6 _4jy1 selected _51sy&quot; name=&quot;login&quot; type=&quot;submit&quot; id=&quot;u_0_a_Yk&quot;&gt;...&lt;/button&gt; is not clickable at point (1079, 435). Other element would receive the click: &lt;div class=&quot;_3ixn&quot;&gt;&lt;/div&gt;
+  (Session info: MicrosoftEdge=112.0.1722.46)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [1196bcc1cc6428b425c683222431f56d, clickElement {id=6027da68-8cea-49ba-b83b-2b331a851639}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.46, ms:edgeOptions: {debuggerAddress: localhost:50914}, msedge: {msedgedriverVersion: 112.0.1722.48 (d0924f8b9cb9..., userDataDir: C:\Users\sathishkumar\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50914/devtoo..., se:cdpVersion: 112.0.1722.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (1196bcc1cc6428b425c683222431f56d)] -&gt; name: login]
+Session ID: 1196bcc1cc6428b425c683222431f56d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at Commons.DriverElements.ClickOnButton(DriverElements.java:32)
+	at Testcases.Facebooklogin.facebookInvalidusername(Facebooklogin.java:76)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="facebookloginandlogout(kumar.sathish189@gmail.com, Admin@123)">
+                  </a> <!-- facebookloginandlogout(kumar.sathish189@gmail.com, Admin@123) -->
+                  <span class="method-name">facebookloginandlogout</span>
+                  <span class="parameters">(kumar.sathish189@gmail.com, Admin@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button value=&quot;1&quot; class=&quot;_42ft _4jy0 _alop _4jy6 _4jy1 selected _51sy&quot; name=&quot;login&quot; type=&quot;submit&quot; id=&quot;u_0_a_Yk&quot;&gt;...&lt;/button&gt; is not clickable at point (1079, 435). Other element would receive the click: &lt;div class=&quot;_3ixn&quot;&gt;&lt;/div&gt;
+  (Session info: MicrosoftEdge=112.0.1722.46)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [1196bcc1cc6428b425c683222431f56d, clickElement {id=6027da68-8cea-49ba-b83b-2b331a851639}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.46, ms:edgeOptions: {debuggerAddress: localhost:50914}, msedge: {msedgedriverVersion: 112.0.1722.48 (d0924f8b9cb9..., userDataDir: C:\Users\sathishkumar\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50914/devtoo..., se:cdpVersion: 112.0.1722.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (1196bcc1cc6428b425c683222431f56d)] -&gt; name: login]
+Session ID: 1196bcc1cc6428b425c683222431f56d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy17.click(Unknown Source)
+	at Commons.DriverElements.ClickOnButton(DriverElements.java:32)
+	at Pages.FacebookloginPage.ClickLoginButton(FacebookloginPage.java:47)
+	at Testcases.Facebooklogin.facebookloginandlogout(Facebooklogin.java:50)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="facebookloginandlogout(kumar.sathish189@gmail.com, Admin@123)">
+                  </a> <!-- facebookloginandlogout(kumar.sathish189@gmail.com, Admin@123) -->
+                  <span class="method-name">facebookloginandlogout</span>
+                  <span class="parameters">(kumar.sathish189@gmail.com, Admin@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[local-name()=&apos;svg&apos; and @aria-label=&apos;Your profile&apos;]&quot;}
+  (Session info: MicrosoftEdge=112.0.1722.46)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [1196bcc1cc6428b425c683222431f56d, findElement {using=xpath, value=//*[local-name()=&apos;svg&apos; and @aria-label=&apos;Your profile&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.46, ms:edgeOptions: {debuggerAddress: localhost:50914}, msedge: {msedgedriverVersion: 112.0.1722.48 (d0924f8b9cb9..., userDataDir: C:\Users\sathishkumar\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50914/devtoo..., se:cdpVersion: 112.0.1722.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1196bcc1cc6428b425c683222431f56d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at Pages.FacebooklogoutPage.ClickOnLogoutDropdown(FacebooklogoutPage.java:29)
+	at Testcases.Facebooklogin.facebookloginandlogout(Facebooklogin.java:57)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -145,6 +279,14 @@
                   <a name="facebookInvalidusername">
                   </a> <!-- facebookInvalidusername -->
                   <span class="method-name">facebookInvalidusername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="facebookloginandlogout(kumar.sathish189@gmail.com, Admin@123)">
+                  </a> <!-- facebookloginandlogout(kumar.sathish189@gmail.com, Admin@123) -->
+                  <span class="method-name">facebookloginandlogout</span>
+                  <span class="parameters">(kumar.sathish189@gmail.com, Admin@123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -183,11 +325,18 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Sanity&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Testcases.Facebooklogin&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- Sanity --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;SIT&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Testcases.Facebooklogin&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SIT --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -199,7 +348,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Sanity (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SIT (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -225,28 +377,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'facebookloginandlogout')
 data.setCell(0, 2, 'Testcases.Facebooklogin')
-data.setCell(0, 3, 7023);
+data.setCell(0, 3, 7627);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'facebookloginandlogout')
 data.setCell(1, 2, 'Testcases.Facebooklogin')
-data.setCell(1, 3, 7015);
+data.setCell(1, 3, 7149);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'facebookloginandlogout')
 data.setCell(2, 2, 'Testcases.Facebooklogin')
-data.setCell(2, 3, 6024);
+data.setCell(2, 3, 7066);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'facebookInvalidusername')
+data.setCell(3, 1, 'facebookloginandlogout')
 data.setCell(3, 2, 'Testcases.Facebooklogin')
-data.setCell(3, 3, 1969);
+data.setCell(3, 3, 5820);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'facebookInvalidusername')
+data.setCell(4, 2, 'Testcases.Facebooklogin')
+data.setCell(4, 3, 2001);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'facebookloginandlogout')
+data.setCell(5, 2, 'Testcases.Facebooklogin')
+data.setCell(5, 3, 1143);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'facebookInvalidusername')
+data.setCell(6, 2, 'Testcases.Facebooklogin')
+data.setCell(6, 3, 1105);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'facebookloginandlogout')
+data.setCell(7, 2, 'Testcases.Facebooklogin')
+data.setCell(7, 3, 161);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -273,33 +441,55 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">Testcases.Facebooklogin</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">launchbrowser</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
-                <span class="method-name">maximizeScreen</span>
-                <span class="method-start">2242 ms</span>
+                <span class="method-name">LaunchURL(edge)</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">facebookloginandlogout(kumar.sathish189@gmail.com, Admin@123)</span>
-                <span class="method-start">3178 ms</span>
+                <span class="method-start">6586 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">facebookloginandlogout(kumar.sathish189@gmail.com, Admin@123)</span>
+                <span class="method-start">13737 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">facebookloginandlogout(kumar.sathish189@gmail.com, Admin@123)</span>
+                <span class="method-start">13901 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">facebookInvalidusername</span>
+                <span class="method-start">15046 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test before">
+                <span class="method-name">LaunchURL(chrome)</span>
+                <span class="method-start">16183 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">facebookloginandlogout(kumar.sathish189@gmail.com, Admin@123)</span>
+                <span class="method-start">18142 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">facebookloginandlogout(kumar.sathish189@gmail.com, Admin@123)</span>
-                <span class="method-start">10204 ms</span>
+                <span class="method-start">25209 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">facebookloginandlogout(kumar.sathish189@gmail.com, Admin@123)</span>
-                <span class="method-start">16229 ms</span>
+                <span class="method-start">32837 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">facebookInvalidusername</span>
-                <span class="method-start">23246 ms</span>
+                <span class="method-start">38659 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">25227 ms</span>
+                <span class="method-start">40666 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

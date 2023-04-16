@@ -9,13 +9,88 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">22,975</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Sanity</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">16,156</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">SIT</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">24,477</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">5</th><th class="num">0</th><th class="num">0</th><th class="num attn">3</th><th class="num">40,633</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">Testcases.Facebooklogin</td><td><a href="#m0">facebookInvalidusername</a></td><td rowspan="1">1681539871530</td><td rowspan="1">1969</td></tr><tr class="passedeven"><td><a href="#m1">facebookloginandlogout</a></td><td rowspan="3">1681539851462</td><td rowspan="3">7023</td></tr><tr class="passedeven"><td><a href="#m2">facebookloginandlogout</a></td></tr><tr class="passedeven"><td><a href="#m3">facebookloginandlogout</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Sanity &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">Testcases.Facebooklogin</td><td><a href="#m0">facebookInvalidusername</a></td><td rowspan="1">1681621121938</td><td rowspan="1">1105</td></tr><tr class="failedeven"><td><a href="#m1">facebookloginandlogout</a></td><td rowspan="2">1681621120793</td><td rowspan="2">1143</td></tr><tr class="failedeven"><td><a href="#m2">facebookloginandlogout</a></td></tr><tr><th colspan="4">Sanity &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Testcases.Facebooklogin</td><td><a href="#m3">facebookloginandlogout</a></td><td rowspan="1">1681621113478</td><td rowspan="1">7149</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">SIT &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">Testcases.Facebooklogin</td><td><a href="#m4">facebookInvalidusername</a></td><td rowspan="1">1681621145551</td><td rowspan="1">2001</td></tr><tr class="passedeven"><td><a href="#m5">facebookloginandlogout</a></td><td rowspan="3">1681621125034</td><td rowspan="3">7066</td></tr><tr class="passedeven"><td><a href="#m6">facebookloginandlogout</a></td></tr><tr class="passedeven"><td><a href="#m7">facebookloginandlogout</a></td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">Testcases.Facebooklogin#facebookInvalidusername</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Testcases.Facebooklogin#facebookloginandlogout</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>kumar.sathish189@gmail.com</td><td>Admin@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Testcases.Facebooklogin#facebookloginandlogout</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>kumar.sathish189@gmail.com</td><td>Admin@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Sanity</h2><h3 id="m0">Testcases.Facebooklogin#facebookInvalidusername</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button value=&quot;1&quot; class=&quot;_42ft _4jy0 _alop _4jy6 _4jy1 selected _51sy&quot; name=&quot;login&quot; type=&quot;submit&quot; id=&quot;u_0_a_Yk&quot;&gt;...&lt;/button&gt; is not clickable at point (1079, 435). Other element would receive the click: &lt;div class=&quot;_3ixn&quot;&gt;&lt;/div&gt;
+  (Session info: MicrosoftEdge=112.0.1722.46)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [1196bcc1cc6428b425c683222431f56d, clickElement {id=6027da68-8cea-49ba-b83b-2b331a851639}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.46, ms:edgeOptions: {debuggerAddress: localhost:50914}, msedge: {msedgedriverVersion: 112.0.1722.48 (d0924f8b9cb9..., userDataDir: C:\Users\sathishkumar\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50914/devtoo..., se:cdpVersion: 112.0.1722.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (1196bcc1cc6428b425c683222431f56d)] -&gt; name: login]
+Session ID: 1196bcc1cc6428b425c683222431f56d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at Commons.DriverElements.ClickOnButton(DriverElements.java:32)
+	at Testcases.Facebooklogin.facebookInvalidusername(Facebooklogin.java:76)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Testcases.Facebooklogin#facebookloginandlogout</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>kumar.sathish189@gmail.com</td><td>Admin@123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button value=&quot;1&quot; class=&quot;_42ft _4jy0 _alop _4jy6 _4jy1 selected _51sy&quot; name=&quot;login&quot; type=&quot;submit&quot; id=&quot;u_0_a_Yk&quot;&gt;...&lt;/button&gt; is not clickable at point (1079, 435). Other element would receive the click: &lt;div class=&quot;_3ixn&quot;&gt;&lt;/div&gt;
+  (Session info: MicrosoftEdge=112.0.1722.46)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [1196bcc1cc6428b425c683222431f56d, clickElement {id=6027da68-8cea-49ba-b83b-2b331a851639}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.46, ms:edgeOptions: {debuggerAddress: localhost:50914}, msedge: {msedgedriverVersion: 112.0.1722.48 (d0924f8b9cb9..., userDataDir: C:\Users\sathishkumar\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50914/devtoo..., se:cdpVersion: 112.0.1722.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (1196bcc1cc6428b425c683222431f56d)] -&gt; name: login]
+Session ID: 1196bcc1cc6428b425c683222431f56d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy17.click(Unknown Source)
+	at Commons.DriverElements.ClickOnButton(DriverElements.java:32)
+	at Pages.FacebookloginPage.ClickLoginButton(FacebookloginPage.java:47)
+	at Testcases.Facebooklogin.facebookloginandlogout(Facebooklogin.java:50)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Testcases.Facebooklogin#facebookloginandlogout</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>kumar.sathish189@gmail.com</td><td>Admin@123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[local-name()=&apos;svg&apos; and @aria-label=&apos;Your profile&apos;]&quot;}
+  (Session info: MicrosoftEdge=112.0.1722.46)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [1196bcc1cc6428b425c683222431f56d, findElement {using=xpath, value=//*[local-name()=&apos;svg&apos; and @aria-label=&apos;Your profile&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.46, ms:edgeOptions: {debuggerAddress: localhost:50914}, msedge: {msedgedriverVersion: 112.0.1722.48 (d0924f8b9cb9..., userDataDir: C:\Users\sathishkumar\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50914/devtoo..., se:cdpVersion: 112.0.1722.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1196bcc1cc6428b425c683222431f56d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at Pages.FacebooklogoutPage.ClickOnLogoutDropdown(FacebooklogoutPage.java:29)
+	at Testcases.Facebooklogin.facebookloginandlogout(Facebooklogin.java:57)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">Testcases.Facebooklogin#facebookloginandlogout</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>kumar.sathish189@gmail.com</td><td>Admin@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>SIT</h2><h3 id="m4">Testcases.Facebooklogin#facebookInvalidusername</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Testcases.Facebooklogin#facebookloginandlogout</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>kumar.sathish189@gmail.com</td><td>Admin@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Testcases.Facebooklogin#facebookloginandlogout</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>kumar.sathish189@gmail.com</td><td>Admin@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Testcases.Facebooklogin#facebookloginandlogout</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>kumar.sathish189@gmail.com</td><td>Admin@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
